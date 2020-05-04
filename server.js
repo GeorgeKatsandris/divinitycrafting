@@ -8,6 +8,6 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
-app.listen(PORT, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(process.env.PORT, function () {
+  console.log('Example app listening on port' + process.env.PORT + '!')
 })
