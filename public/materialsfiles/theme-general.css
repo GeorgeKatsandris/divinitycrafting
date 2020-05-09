@@ -1,0 +1,842 @@
+/*****************************************************************
+ * Divinity Original Sin 2 theme  
+ * **************************************************************
+ * 
+ * **************************************************************
+ *****************************************************************/
+/* latin-ext */
+@font-face {
+  font-family: 'Marcellus SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local('Marcellus SC'), local('MarcellusSC-Regular'), url(https://fonts.gstatic.com/s/marcellussc/v5/ke8iOgUHP1dg-Rmi6RWjbLE_iNacKKg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Marcellus SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local('Marcellus SC'), local('MarcellusSC-Regular'), url(https://fonts.gstatic.com/s/marcellussc/v5/ke8iOgUHP1dg-Rmi6RWjbLE_htac.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.fex-main {
+    background: rgba(0, 0, 0, 0.85);
+}
+.wiki_table th {
+background: transparent url("https://www.wiki.fextralife.com/file/view/eso-wiki-table.jpg")
+}
+.wiki_table thead tr {
+background: transparent url("https://www.wiki.fextralife.com/file/view/eso-wiki-table.jpg")
+}
+/******* Weapon Spans *****************/
+
+.damage {color:#b26666;}
+.defense {color:#7f7fbf;}
+.fire {color:#ff6600;}
+.water {color: #00ccff;}
+.air {color: #3366ff;}
+.poison {color: #99cc00;}
+.earth {color: #ffff00;}
+
+
+/******* Wiki Links *****************/
+.wiki_link {
+    border-bottom: none;
+    color: #eb8203 ; 
+}
+
+/******* Heading Formatting *****************/
+.speciallarge {
+    border-radius: 15px 50px;
+    background: #eb8203;
+    padding: 20px;
+    max-width: 600px;
+    height: 50px;
+    line-height: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/texture-noise.png);
+font-size: 1.5em;
+}
+.special {
+  text-align: center;
+  font-size: 18px;
+  word-wrap: normal;
+  height: 25px;
+border-bottom: 3px solid #eb8203;
+}
+
+.titlearea {
+text-align: center;
+font-size: 28px;
+word-wrap: normal;
+background: url(https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/favicon-32.png) no-repeat left center;
+background-position: 3px 4px;
+border-top: 3px solid #eb8203;
+border-bottom: 3px solid #eb8203;
+margin: 18px 0px;
+height: 45px;
+line-height: 40px;
+}
+.bonfire {
+word-wrap: normal;
+background: url(https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/divinityfavicon-32.png) no-repeat left center;
+padding-left: 40px;
+height: 32px;
+line-height: inherit;
+text-align: -moz-left;
+}
+
+@media only screen and (max-width: 836px) {
+img, input {
+max-width: 100% !important;
+}
+iframe, object, embed {
+display: inline-block;
+max-width: 100%;
+}
+}
+.spoilertitle { cursor: pointer; padding-left: 10px; background-color: #7C6C50; background-image: linear-gradient(to right, #AB966F, #000); color: #EEE; font-size: 15px; font-weight: bold; line-height: 24px }
+.spoilercontent { height: 0px; overflow: hidden; transition: height 0.5s ease 0s }
+@media only screen and (max-width: 860px) {
+.wiki_table {
+overflow-x: auto;
+overflow-y: hidden;
+margin: 0px auto;
+max-width: 100%;
+display: block;
+}
+.bonfire {line-height:inherit !Important;font-size: 1.1em !Important;}
+.titlearea {line-height:inherit !Important; height:inherit !Important}
+}
+.infobox .wiki_table {
+display: table;
+}
+#discussion-section ul {
+width: 100%!important;
+}
+}
+
+/* ==== General CSS ==== */
+.infobox li {
+font-size: 16px
+}
+.wiki_table li {
+font-size: 16px
+}
+
+/* ==== Fixing issues ==== */
+.popover-content .wiki_table{margin:0px 0!Important;}
+.popover-content h4 {
+    font-size: 1em;}
+
+#wiki-content-block #ifrmDiv{position:absolute !important;}
+
+/******* Infobox *****************/
+.infobox { 
+width: 300px; background-color: transparent;  margin: 0 0 1.5em 0.5em; float: right; clear: right; color: #E7E7E7; font-size: 88% 
+}
+
+@media only screen and (max-width: 480px) { 
+.infobox { 
+width: 100% }
+}
+.infobox th { font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif; font-size: 1em; text-align: center; padding: 0px; background: transparent url("https://www.wiki.fextralife.com/file/view/eso-wiki-table.jpg") }
+.infobox tr {
+    color: #FFF;
+    font-size: inherit;
+}
+
+/******* Youtube Video *****************/
+.yt-container{
+margin:10px auto;width:100%;max-width:600px}.yt-player{width:100%;height:100%;padding-bottom:56.25%;overflow:hidden;position:relative;}img.yt-thumb{display:block;position:absolute;width:100%;bottom:0;margin:auto}#yt-iframe{width:100%;height:100%;position:absolute;top:0;left:0}
+
+/******* Google + Fix *****************/
+
+ .g-plus-menu {
+    margin: 0px 0px 0px;
+}
+
+/******* NavSprite Customizations *****************/
+.navsprite {
+    background-image: url('/file/Divinity-Original-Sin-2/navsprite.png');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.navsprite.home{background-position:0 0}.navsprite.a{background-position:-37px 0}.navsprite.b{background-position:-74px 0}.navsprite.c{background-position:-111px 0}.navsprite.d{background-position:-148px 0}.navsprite.e{background-position:-185px 0}.navsprite.f{background-position:-222px 0}.navsprite.g{background-position:-259px 0}.navsprite.miniring{width:16px;height:16px;background-position:-296px 0}.navsprite.arrowright{width:7px;height:11px;background-position:-317px 0;margin-left:10px}
+
+body {
+    background-color: #111;
+	font-size: 14px;
+	color:#fff;
+}
+
+/******* IOS compatible stupid fix *****************/
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1920px;
+   z-index: -1;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+/******* IOS compatible stupid fix *****************/
+
+/******* 
+
+ This sucks but on IOS there is no easy solution  https://twitter.com/paul_irish/status/306818591196602368  
+ needs some testing http://fourkitchens.com/blog/article/fix-scrolling-performance-css-will-change-property  
+
+body {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+	background-clip: border-box;
+	background-color: transparent;
+	background-origin: padding-box;
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-color:#000000;
+	font-size: 16px;
+	color:#fff;
+}
+
+.ios-fix {
+    height:100%;
+	width:100%;
+	position:fixed;
+    background-image: url("../images/dragons-dogma-background.jpg");
+	overflow: scroll;
+}
+
+*****************/
+
+/******* Headings *****************/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+} 
+.h3 {font-size:1.5em;}
+
+/******* Section group fix *****************/
+
+.section:before,
+.section:after { content:""; display:table; }
+.section:after { clear:both;}
+.section { zoom:1; /* For IE 6/7 */ }
+
+/******* NavMenu Colors and Such*****************/
+
+.section-heading a:focus,
+#navMenu li a:focus,
+.section-heading a:hover,
+
+#navMenu li a:hover {
+    color: #eb8203 !important;
+}
+#navMenu {
+    font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+}
+
+/******* Blockquote Fixes *****************/
+blockquote p::before {
+    color: #eb8203 !important;
+font-size:2em!important;
+}
+
+blockquote p {
+    font-family: "arial";
+	color: #B4B2B0 !important;
+	font-style: italic;
+	font-wieght: normal;
+	text-indent: 20px;
+    font-size: 18px;
+    max-width: 800px;
+}
+ blockquote {
+    padding: 0 0 5px;
+margin: 0 0 5px;}
+
+
+ 
+
+.font-test {
+	font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color:#fff;
+}
+
+
+.page-segment h1::after, .page-segment h2::after, .page-segment h3::after {
+    bottom: 0px;
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-bottom: -3px;
+    content: "";
+    background-color: #eb8203;
+
+} 
+ 
+.page-segment h1 {
+    font-size: 1.5em;
+    text-transform: none;
+    color: #eb8203;
+    border-bottom: 3px solid #FFF;
+	}
+.section-heading.section-heading-light {
+    border-color: #eb8203;
+    color: #fff;
+}
+
+.simulation-hero-heading {
+    display: block;
+    margin: 16px auto;
+    margin: 1rem auto;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+.section-heading {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    box-sizing: border-box;
+    display: block;
+    font-size: inherit;
+    max-width: 1100px;
+    padding: 17px;
+    padding: 1.0625rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+ 
+.nav-header #mainnav .wrapper nav .main-nav .nav-item:not(.mobile-menu):before, .nav-header #mainnav .wrapper nav .main-nav .nav-item:not(.mobile-menu):after {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-transform: skewX(-32deg);
+        -ms-transform: skewX(-32deg);
+            transform: skewX(-32deg);
+}
+.nav-header #mainnav .wrapper nav .main-nav .nav-item.my-rsi.loggedout:after {
+    background-color: #ff1800;
+    box-shadow: 7px 0 21px 2px rgba(187, 0, 0, 0.75), 6px 0 18px 2px rgba(255, 24, 0, 0.64), 15px 0 55px 5px rgba(187, 0, 0, 0.8), 0 0 8px 1px rgba(255, 24, 0, 0.64);
+}
+
+#navMenu > li {
+    background: rgba(0, 0, 0, 0.1) -moz-linear-gradient(center top , rgba(255, 255, 255, 0.09) 0%, transparent 100%);
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #363636;
+    font-size: 1em;
+    line-height: 50px;
+    padding-left: 5px;
+    position: relative;
+    z-index: 20;
+}
+
+.navSubMenu > li {
+    position: relative;
+    font-size: 1em;
+    line-height: normal;
+}
+
+/******* Footer Fixes *****************/
+
+.footer-sticky {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0px 0px;
+    border-top: 5px solid #eb8203;
+    color: #eb8203;
+    bottom: 0px;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    font-family: "arial";
+}
+ .footer-sticky a {
+    color: #eb8203;
+}
+.fallout-input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #897859;
+    box-sizing: border-box;
+    color: #897859;
+	font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    padding: 17px 20px 17px 60px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.fallout-input-wrapper button {
+    background: rgba(0, 0, 0, 0) url("../images/icon.png") no-repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    height: 33px;
+    left: 12px;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+} 
+ 
+ 
+.login-wrapper {
+   display: block;
+   height: auto;
+   margin-top: 10%;
+   max-width: 600px;
+   width: 100%;
+   padding: 50px;
+   position: relative;
+   background: #080325;
+   background: rgba(8, 3, 37, 0.7);
+   text-align: center;
+   padding: 40px;  
+}
+
+.btn-fallout {
+    background: transparent none repeat scroll 0 0;
+	color: #fff;
+    border: 2px solid #fff;
+	font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 12px 34px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-fallout:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #160925;
+}
+
+
+.login-wrapper h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 34px;
+    margin: 8px 0 7px;
+}
+.lines {
+    background: rgba(0, 0, 0, 0) url("../images/lines.png") no-repeat scroll left center;
+    color: #adff6d;
+    font-size: 28px;
+    padding-left: 156px;
+}
+
+
+.form-icon {
+    position: relative;
+    margin: 0;
+}
+
+.panel-login .form-group + .form-group {
+    margin: 10px 0 16px;
+}
+
+.login-form-icon {
+    font-size: 16px;
+    line-height: 27px;
+    position: absolute;
+    z-index: 1002;
+    top: 9px;
+    bottom: 9px;
+    left: 0;
+    display: block;
+    width: 40px;
+    padding: 1px 15px;
+    -webkit-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+    text-align: center;
+    color: #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+
+.fallout-login-form {
+    background: rgba(0, 0, 0, 0) url("../images/helper.png") no-repeat scroll center;
+    font-size: 16px;
+    line-height: 27px;
+    position: absolute;
+    z-index: 1002;
+    top: 9px;
+	left: 10px;
+    bottom: 9px;
+    display: block;
+    width: 40px;
+    padding: 1px 15px;
+    -webkit-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+    text-align: center;
+    color: #d6d6d6;
+}
+
+.control-label {
+    color: #fff;
+	font-weight: inherit;
+    display: block;
+}
+
+
+
+/* iCheck plugin Square skin, aero
+----------------------------------- */
+.icheckbox_square-aero,
+.iradio_square-aero {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url('../images/aero.png') no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-aero {
+    background-position: 0 0;
+}
+    .icheckbox_square-aero.hover {
+        background-position: -24px 0;
+    }
+    .icheckbox_square-aero.checked {
+        background-position: -48px 0;
+    }
+    .icheckbox_square-aero.disabled {
+        background-position: -72px 0;
+        cursor: default;
+    }
+    .icheckbox_square-aero.checked.disabled {
+        background-position: -96px 0;
+    }
+
+.iradio_square-aero {
+    background-position: -120px 0;
+}
+    .iradio_square-aero.hover {
+        background-position: -144px 0;
+    }
+    .iradio_square-aero.checked {
+        background-position: -168px 0;
+    }
+    .iradio_square-aero.disabled {
+        background-position: -192px 0;
+        cursor: default;
+    }
+    .iradio_square-aero.checked.disabled {
+        background-position: -216px 0;
+    }
+
+/* HiDPI support */
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_square-aero,
+    .iradio_square-aero {
+        background-image: url('../images/aero@2x.png');
+        background-size: 240px 24px;
+    }
+}
+/* iCheck plugin Square skin, aero
+----------------------------------- */
+
+
+
+
+/* glow control for panels
+----------------------------------- */
+
+/* glow control top corners */
+.glow-corners.top-corners:before {
+    border-width: 1px 0 0 1px;
+}
+.glow-corners:before {
+    left: 0;
+}
+.glow-corners.top-corners:after {
+    border-width: 1px 1px 0 0;
+}
+.glow-corners:after {
+    right: 0;
+}
+
+/******* Top Right Icon *****************/
+
+.vault-loder {
+    background: url('/file/Divinity-Original-Sin-2/favicon-32.png') no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -4px 4px 0 0;
+    padding: 0;
+    width: 52px;
+    height: 32px;
+    z-index: 9;
+    
+}
+
+.top-right-vault {
+    position: absolute;
+	right: 20px;
+    top: -9px;
+}
+
+.glow-corners:before, .glow-corners:after {
+    border-color: #00edff;
+    border-style: solid;
+    content: "";
+    height: 28px;
+    position: absolute;
+    -webkit-transform: translateZ(0px);
+            transform: translateZ(0px);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    width: 28px;
+}
+.glow-corners.top-corners {
+    top: 0;
+}
+.glow-corners {
+    position: absolute;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+/* glow control bottom corners */
+.glow-corners.bottom-corners:before {
+    border-width: 0 0 1px 1px;
+}
+.glow-corners:before {
+    left: 0;
+}
+.glow-corners.bottom-corners:after {
+    border-width: 0 1px 1px 0;
+}
+.glow-corners:after {
+    right: 0;
+}
+.glow-corners.bottom-corners {
+    bottom: 13px;
+}
+
+
+
+
+
+/* glow control some position override */
+.glow-corners:before {
+    left: 0;
+}
+.glow-corners:after {
+    right: 0;
+}
+
+/* glow control some thickness override top */
+.glow-corners.top-corners:before {
+    border-width: 2px 0 0 2px;
+}
+.glow-corners.top-corners:after {
+    border-width: 2px 2px 0 0;
+}
+
+
+/* glow control some thickness override bottom */
+.glow-corners.bottom-corners:before {
+    border-width: 0 0 2px 2px;
+}
+.glow-corners.bottom-corners:after {
+    border-width: 0 2px 2px 0;
+}
+
+
+
+.glow-corners:before, .glow-corners:after {
+    border-color: #eb8203 ;
+	height: 16px;
+	width: 100%;
+}
+/* glow control for panels
+----------------------------------- */ 
+
+
+.wikis-link img {
+    max-width: 100%;
+    width: 160px;
+}
+
+
+.wiki_table tr:nth-child(2n+1) {
+    background-color: #222222;
+}
+
+.wiki_table tr {
+    background-color: inherit;
+}
+
+thead tr {
+    background-color: #484440 !important;
+}
+
+tfoot tr {
+    background-color: #484440 !important;
+}
+
+.wiki_table th, .wiki_table td {
+    border: 2px solid #282828;
+}
+
+.wiki_table tr:hover {
+    background: rgba(0, 0, 0, 0) url("../images/bg-maintitle.png") repeat-x;
+	background-size:cover;
+}
+
+
+table {
+    border: 2px solid #eb8203 ;
+	border-collapse: separate;
+}
+
+
+.wiki_table th, .wiki_table td {
+    border: 1px solid #282828;
+}
+
+
+.feed_item_title a {
+    color: #eb8203 ;
+}
+
+.wiki_link {
+border-bottom: none;
+color: #eb8203 ;
+}
+
+
+a.wiki_link:hover{color: #897859;text-decoration:underline;}
+
+
+.wiki_link_ext:after {
+   content: "\e164";
+  font-family: 'Glyphicons Halflings';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+a.wiki_link_ext {
+  color: #eb8203;
+}
+
+a.wiki_link_ext:hover {
+  color: #897859;
+}
+
+.page-segment a:hover {
+    color: #897859 !Important;
+	text-decoration:none;
+}
+
+/******* Revisiondate Formatting *****************/
+
+.revisiondate {
+    color: #eb8203 ;
+    font-family: "arial";
+    font-size: 0.8em;
+	max-width: 50%;
+}
+
+a.collapse-trigger:focus, a.collapse-trigger:hover {
+    color: #eb8203 ;
+	outline:none;
+}
+
+/******* Breadcrumb Formatting *****************/
+
+.breadcrumbs {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 0.8em;
+	max-width: 50%;
+}
+
+/******* Page Include Formatting *****************/
+
+.includePageListPageUrl {
+    color: #eb8203 ;
+}
+
+/******* Tab Formatting *****************/
+
+.tabtitle {
+    background-color: #484440;
+    border: 2px solid #eb8203;
+}
+
+/******* Table of contents Formatting *****************/
+#toc {
+    border: 1px solid #DCDCDC;
+    background: #F3F3F3 none repeat scroll 0% 0%;
+    padding: 6px;
+    margin: 0px 0px 10px 10px;
+    width: 25%;
+    float: right;
+    clear: right;
+    border-radius: 6px;
+background-color: #100C08;
+}
+
+/* Tooltip CSS */
+.fextratip {display: inline-block;position: relative;}
+.fextratip ul {margin: 5px 0;padding-left: 15px;}
+.fextratip .center {text-align: center;}
+
+.popover {display: none;position: absolute;top: 0;z-index: 999999;min-width: 225px;max-width: 250px;background-color: #24211e;color: #e8e4e0;white-space: normal;}
+.popover.left {left: auto;}
+.popover-content {padding: 0px;font-family: Arial,Helvetica,sans-serif;font-size: 11px;line-height: 14px;text-align :left;}
+.popover-title {margin: -5px -5px 5px;height: 24px;line-height: 24px;background-color: #777;color: #fd8;font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;font-size: 16px;text-align: center;text-shadow: #000 1px 1px 1px;}.arro$
+.popover.right .arrow {top: 50%;left: -11px;margin-top: -11px;border-left-width: 0;border-right-color: #585450;}
+.popover.right .arrow:after {content: " ";left: 1px;bottom: -10px;border-left-width: 0;border-right-color: #585450;}
+.popover.left .arrow {top: 50%;right: -11px;margin-top: -11px;border-right-width: 0;border-left-color: #585450;}
+.popover.left .arrow:after {content: " ";right: 1px;border-right-width: 0;border-left-color: #585450;bottom: -10px;}
+
+.popover-content th {
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    background: url(/file/Elder-Scrolls-Online/eso-wiki-table.jpg);
+}
+# Posts/Articles Css
+li.CompItem{list-style:none;border-bottom:1px dashed #CCC;margin:0 0 7px;padding:0 0 7px}ul.CompItems{list-style:none;-webkit-padding-start:0!important;-webkit-padding-after:1em!important;padding-left: 0px;}.CompItemTitle a{color:#DEC58C!important}a.CompItemLink{color:#fff}span.CompItemAuthor{color:#aaa;font-size:small}span.CompItemDate{color:aaa;font-size:xx-small}.CompItemDescription{color:#bbb;font-size:small}
